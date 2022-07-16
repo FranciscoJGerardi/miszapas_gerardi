@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  /* -----------------------header---------------------- */
+
+ 
+.header {
+    background-image: url(./imagenes/fondoheader.jpg);
+    height: 18rem;
+    display: grid; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "logo navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar"
+      "titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo"; 
+    
+  }
+.header__navbar { grid-area: navbar; }
+
+.logo{
+    grid-area: logo;
+    height: 12rem; 
+    width: 14rem;
+    display: flex;
+    overflow: hidden;
+}
+header img{
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+header img:hover{
+  transform: scale(1.1);
+}
+.header__navbar ul{
+    display: flex;
+    justify-content: right;
+    padding-top: 1rem
+    
+    
+}
+.header__navbar li{
+    text-transform: uppercase;
+    list-style: none;
+    background-color:transparent;
+    padding: 0.7rem;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    margin: 1rem;
+    background-image: linear-gradient(45deg, rgb(241, 180, 46) 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 0.5s ease-in-out;
+}
+.header__navbar li:hover{
+  background-position: 0;
+}
+.header__navbar a{
+    text-decoration: none;
+    color: black;
+    
+}
+.header__titulo{
+  grid-area: titulo;
+  text-align: center;
+  border-bottom: solid 6px black;    
+}
+/*-------------------main------------------*/
+
+.main {
+  background-image: url(./imagenes/fondomain.jpg);
+  background-color: blue;
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 0.2fr 0.2fr 2.6fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "buscador buscador buscador buscador buscador buscador buscador buscador buscador buscador buscador buscador"
+    "ofertas ofertas ofertas ofertas ofertas ofertas ofertas ofertas ofertas ofertas ofertas ofertas"
+    "productosenoferta productosenoferta productosenoferta productosenoferta productosenoferta productosenoferta productosenoferta productosenoferta productosenoferta productosenoferta productosenoferta productosenoferta"; 
+}
+.ofertas { grid-area: ofertas; }
+
+.main__buscador{ 
+  grid-area: buscador;
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+
+}
+.main__buscador img{
+  height: 3rem;
+
+}
+
+.main__ofertas{
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 2rem;
+  justify-content: flex-start;
+}
+.main__buscador{
+  display: flex;
+  padding: 3rem;
+  
+}
+.main__buscador--texto{
+    text-align: center;
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    border: 1px solid silver;
+    border-radius: 50px;
+}
+.main__productosenoferta {
+  display: grid; 
+  grid-area: productosenoferta;
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "zapa1 zapa2"
+    "zapa3 zapa4"; 
+  justify-items: center;
+}
+.zapa1 { grid-area: zapa1; }
+.zapa2 { grid-area: zapa2; }
+.zapa3 { grid-area: zapa3; }  
+.zapa4 { grid-area: zapa4; }
+
+.main__productosenoferta img{
+  display: flex;
+  image-resolution: 100%;
+  width: 20rem;
+  height: 10rem;
+  border: solid 0.4rem black;
+  border-radius: 5px;
+}
+.main__productosenoferta div {
+  display: flex;
+  width: 20rem;
+  height: 20rem;
+  font-size: 1.1rem;
+  flex-direction: column;
+  
+}
+/* --------------------------Main Sobre Nosotros-------------------------------- */
+
+.main__sobrenostros{
+  background-image: url(./imagenes/fondomain.jpg);;
+  display: flex; 
+  flex-direction: column;
+}
+.main__sobrenostros section{
+  padding: 3rem;
+}
+
+.main__sobrenostros img{
+  display: flex;
+  width: 25rem;
+}
+.main__sobrenosotros__quienessomos {
+  display: flex;
+}
+.main__sobrenosotros__historia{
+  display: flex;
+}
+.main__sobrenosotros__quienessomos p {
+  padding: 1rem;
+  font-size: 2rem;
+
+}
+.main__sobrenosotros__quienessomos h1 {
+  padding: 1rem;
+  font-size: 3rem;
+
+}
+.main__sobrenosotros__historia p {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.main__sobrenosotros__historia h1 {
+  padding: 1rem;
+  font-size: 3rem;
+
+}
+
+/* ----------------footer---------------- */
+.footer {
+  background-image: url(./imagenes/fondofooter.jpg);;
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "derechos  footernavbar  redes"; 
+}
+.footernavbar { 
+  grid-area: footernavbar; 
+  display: flex;
+  
+}
+
+
+.footer__derechos {
+  grid-area: derechos;
+  color: white;
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+
+.footer__navbar ul{
+  display: flex;
+  list-style: none;
+  padding: 0%;
+  flex-direction: column;
+}
+.footer__navbar li{
+  
+  text-transform: uppercase;
+  list-style-type: none;
+  border-radius: 5%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.footer__navbar a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.footer__redes {
+  grid-area: redes;
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+}
+.footer__redes img{
+width: 5rem;
+transition: 0.5s;
+object-fit: cover;
+}
+.footer__redes img:hover{
+  transform: scale(1.2);
+}
+@media only screen and (max-width: 1024px){
+  .footer__redes{
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: flex-end;
+
+  }
+}
+@media only screen and (max-width: 768px){
+  .footer__redes{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .main__sobrenosotros__quienessomos{
+    display: flex;
+    flex-direction: column;
+  }
+  .main__sobrenosotros__historia{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  .main__productosenoferta {
+    display: grid; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr ; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "zapa1" 
+      "zapa2"
+      "zapa3" 
+      "zapa4"; 
+      justify-items: center;
+  }
+  .main__sobrenosotros__quienessomos img{
+    width: 100%;
+  
+  }
+  .main__sobrenosotros__historia img{
+    width: 100%;
+  }
+  .footer__derechos{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .footer__navbar li{
+    font-size: 1rem;
+    margin: 0%;
+    padding: 1rem;
+  }
+  .footer__redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+  }
+  .footer__redes img{
+    width: 3rem;
+    
+    }
+}
+
+

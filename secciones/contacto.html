@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MisZapas</title>
+        <link rel="stylesheet" href="../estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Staatliches&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header class="header">
+        <a href="../index.html"><img class="logo" src="../imagenes/logo.png" alt="logo"></a>
+        <nav class="header__navbar">
+           <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../secciones/productos.html">Productos</a></li>
+                <li><a href="../secciones/sobre_nosotros.html">Sobre nosotros</a></li>
+                <li><a href="../secciones/locales.html">Locales</a></li>
+                <li><a href="../secciones/contacto.html">Contacto</a></li>
+            </ul>    
+        </nav>
+        <div class="header__titulo">
+            <h1>Mis Zapas</h1>
+            <h3>La mejor tienda en linea</h3>
+        </div>
+    </header>
+    <main class="main">
+        <form action="">
+        <fieldset> 
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required="">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required="">
+            <label for="correo">Correo Electronico</label>
+            <input type="email" name="correo" id="correo" placeholder="Ingresa tu mail" required="">
+            <label for="num">Numero de telefono</label>
+            <input type="number" name="number" id="number" placeholder="Ingresa un numero" required="">
+            <label for="direccion">Direccion</label>
+            <input type="text" name="direccion" id="direccion" placeholder="Ingresa tu direccion" required="">
+            <label for="cp">Código postal</label>
+            <input type="text" name="con" id="con" placeholder="Ingresa tu codigo postal" required="">  
+        </fieldset>
+        <fieldset>
+            <legend>Hace tu pedido</legend>
+            <label for="modelo">Modelos</label>
+            <select name="modelo" id="modelo" aria-placeholder="Selecciona el modelo">
+                <option value="">Selecciona el modelo</option>
+                <option value="zapa1">zapa1</option>
+                <option value="zapa2">zapa2</option>
+                <option value="zapa3">zapa3</option>
+                <option value="zapa4">zapa4</option>
+            </select>
+            <label for="talle">Selecciona el talle</label>
+            <input type="radio" name="talle">37
+            <input type="radio" name="talle">38
+            <input type="radio" name="talle">39
+            <input type="radio" name="talle">40
+            <input type="radio" name="talle">41
+            <input type="radio" name="talle">42
+            <input type="radio" name="talle">43
+            <div>Elija como recibirlas</div>
+            <input type="radio" name="recibir">Envio a domicilio
+            <input type="radio" name="recibir">Retiro en local
+            <label for="Detalles">Consulta o recomendacion</label>
+            <textarea name="cor" id="cor" cols="50" rows="10" maxlength="200" ></textarea>
+            <input type="submit" value="Hacer pedido">
+            <input type="reset" value="Limpiar formulario">
+        </fieldset>
+    </form>
+    </main>
+    <footer class="footer"> 
+        <div class="footer__derechos">
+            <h5>Todos los derechos reservados</h5>
+        </div>
+        <nav class="footer__navbar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../secciones/productos.html">Productos</a></li>
+                <li><a href="../secciones/sobre_nosotros.html">Sobre nosotros</a></li>
+                <li><a href="../secciones/locales.html">Locales</a></li>
+                <li><a href="../secciones/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav class="footer__redes">
+            <div class="logo_redes">
+            <a href="https://www.facebook.com/"><img src="../imagenes/logo_facebook.png" alt="Facebook"></a>
+            </div>
+            <div class="logo_redes">   
+            <a href="https://www.instagram.com/"><img src="../imagenes/logo_instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="logo_redes">  
+            <a href="https://www.whatsapp.com/"><img src="../imagenes/logo_whatsapp.png" alt="Whatsapp"></a>
+            </div>
+            <div class="logo_redes">    
+            <a href="https://www.twitter.com/"><img src="../imagenes/logo_twitter.png" alt="Twitter"></a>
+            </div>      
+        </nav>
+</footer>
+</body>
+</html>
