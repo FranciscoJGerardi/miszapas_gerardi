@@ -50,50 +50,34 @@
           </nav>
         </div>
     </header>
-    <main class="main">
-        <form action="">
-        <fieldset> 
-            <legend>Datos personales</legend>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required="">
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required="">
-            <label for="correo">Correo Electronico</label>
-            <input type="email" name="correo" id="correo" placeholder="Ingresa tu mail" required="">
-            <label for="num">Numero de telefono</label>
-            <input type="number" name="number" id="number" placeholder="Ingresa un numero" required="">
-            <label for="direccion">Direccion</label>
-            <input type="text" name="direccion" id="direccion" placeholder="Ingresa tu direccion" required="">
-            <label for="cp">Código postal</label>
-            <input type="text" name="con" id="con" placeholder="Ingresa tu codigo postal" required="">  
-        </fieldset>
-        <fieldset>
-            <legend>Hace tu pedido</legend>
-            <label for="modelo">Modelos</label>
-            <select name="modelo" id="modelo" aria-placeholder="Selecciona el modelo">
-                <option value="">Selecciona el modelo</option>
-                <option value="zapa1">zapa1</option>
-                <option value="zapa2">zapa2</option>
-                <option value="zapa3">zapa3</option>
-                <option value="zapa4">zapa4</option>
-            </select>
-            <label for="talle">Selecciona el talle</label>
-            <input type="radio" name="talle">37
-            <input type="radio" name="talle">38
-            <input type="radio" name="talle">39
-            <input type="radio" name="talle">40
-            <input type="radio" name="talle">41
-            <input type="radio" name="talle">42
-            <input type="radio" name="talle">43
-            <div>Elija como recibirlas</div>
-            <input type="radio" name="recibir">Envio a domicilio
-            <input type="radio" name="recibir">Retiro en local
-            <label for="Detalles">Consulta o recomendacion</label>
-            <textarea name="cor" id="cor" cols="50" rows="10" maxlength="200" ></textarea>
-            <input type="submit" value="Hacer pedido">
-            <input type="reset" value="Limpiar formulario">
-        </fieldset>
-    </form>
+    <main class="main_contacto">
+      
+      <div class="card text-bg-light mb-3" style="max-width: 30rem; max-height: 40rem;">
+        <div class="card-header">Contactanos</div>
+        <div class="card-body">
+          <h5 class="card-title">En breves nos comunicaremos con usted</h5>
+          <form action="">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" required="" >
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" required="">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Numero de telefono</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1" required="">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="button submit" class="btn btn-secondary">Enviar</button>
+
+        </form>
+        </div>
+      </div>  
     </main>
     <footer class="footer"> 
         <div class="footer__derechos">

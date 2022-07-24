@@ -48,10 +48,36 @@ body {
   flex-direction: column;
   padding: 3rem;
 }
-select{
-  padding: 3rem;
-}
 
+/*----------------------------main contactanos----------------------------*/
+.main_contacto{
+  background-image: url(./imagenes/fondomain.jpg);
+  background-color: blue;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+/*----------------------------main local----------------------------*/
+
+.main_locales{
+  background-image: url(./imagenes/fondomain.jpg);
+  background-color: blue;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+}
+.plaza{
+  image-resolution: 100%;
+}
+.ubicacion{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.mapa{
+  display: flex;
+  justify-content: center;
+}
 
 /* --------------------------Main Sobre Nosotros-------------------------------- */
 
