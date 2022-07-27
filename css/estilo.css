@@ -24,7 +24,7 @@ body {
 /*-------------------main------------------*/
 
 .main {
-  background-image: url(./imagenes/fondomain.jpg);
+  background-image: url(../imagenes/fondomain.jpg);
   background-color: blue;
   padding: 2rem;
   display: flex;
@@ -37,7 +37,7 @@ body {
 }
 /*----------------main productos---------------*/
 .main__productos{
-  background-image: url(./imagenes/fondomain.jpg);
+  background-image: url(../imagenes/fondomain.jpg);
   background-color: blue;
   padding: 2rem;
   display: flex;
@@ -51,7 +51,7 @@ body {
 
 /*----------------------------main contactanos----------------------------*/
 .main_contacto{
-  background-image: url(./imagenes/fondomain.jpg);
+  background-image: url(../imagenes/fondomain.jpg);
   background-color: blue;
   padding: 2rem;
   display: flex;
@@ -60,7 +60,7 @@ body {
 /*----------------------------main local----------------------------*/
 
 .main_locales{
-  background-image: url(./imagenes/fondomain.jpg);
+  background-image: url(../imagenes/fondomain.jpg);
   background-color: blue;
   display: flex;
   padding: 1rem;
@@ -82,8 +82,8 @@ body {
 /* --------------------------Main Sobre Nosotros-------------------------------- */
 
 .main__sobrenostros{
-  background-image: url(./imagenes/fondomain.jpg);
-  background-color: blue;
+  background-image: url(../imagenes/fondomain.jpg);
+  background-color: rgb(40, 40, 44);
   flex-direction: column;
 }
 .main__sobrenostros section{
@@ -122,7 +122,7 @@ body {
 
 /* ----------------footer---------------- */
 .footer {
-  background-image: url(./imagenes/fondofooter.jpg);
+  background-image: url(../imagenes/fondofooter.jpg);
   display: grid; 
   grid-auto-rows: 1fr; 
   grid-template-columns: 1fr 1fr 1fr; 

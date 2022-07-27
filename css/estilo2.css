@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+/* -----------------------header---------------------- */
+.header {
+  display: flex;
+  justify-content: space-between; }
+  .header .divlogo {
+    display: flex; }
+    .header .divlogo .logo {
+      height: 7rem; }
+  .header .buscador {
+    height: 3rem; }
+
+/*-------------------main------------------*/
+.main {
+  background-image: url(../imagenes/fondomain.jpg);
+  background-color: blue;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column; }
+  .main .main__ofertas {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem; }
+
+/*----------------main productos---------------*/
+.main__productos {
+  background-image: url(../imagenes/fondomain.jpg);
+  background-color: blue;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column; }
+  .main__productos .catalogo {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem; }
+
+/*----------------------------main contactanos----------------------------*/
+.main_contacto {
+  background-image: url(../imagenes/fondomain.jpg);
+  background-color: blue;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around; }
+
+/*----------------------------main local----------------------------*/
+.main_locales {
+  background-image: url(../imagenes/fondomain.jpg);
+  background-color: blue;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around; }
+  .main_locales .ubicacion {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem; }
+    .main_locales .ubicacion .plaza {
+      image-resolution: 100%; }
+  .main_locales .mapa {
+    display: flex;
+    justify-content: center; }
+
+/* --------------------------Main Sobre Nosotros-------------------------------- */
+.main__sobrenostros {
+  background-image: url(../imagenes/fondomain.jpg);
+  background-color: blue;
+  flex-direction: column; }
+  .main__sobrenostros section {
+    padding: 3rem; }
+  .main__sobrenostros img {
+    display: flex;
+    width: 25rem; }
+  .main__sobrenostros .quienessomos {
+    display: flex; }
+    .main__sobrenostros .quienessomos p {
+      padding: 1rem;
+      font-size: 2rem; }
+    .main__sobrenostros .quienessomos h1 {
+      padding: 1rem;
+      font-size: 3rem; }
+  .main__sobrenostros .historia {
+    display: flex; }
+    .main__sobrenostros .historia p {
+      padding: 1rem;
+      font-size: 2rem; }
+    .main__sobrenostros .historia h1 {
+      padding: 1rem;
+      font-size: 3rem; }
+
+/* ----------------footer---------------- */
+.footer {
+  background-image: url(../imagenes/fondofooter.jpg);
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 0.6fr 0.6fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "derechos  footernavbar  redes"; }
+  .footer .derechos {
+    grid-area: derechos;
+    color: white;
+    padding: 3rem;
+    font-size: 1.5rem; }
+  .footer .footernavbar {
+    grid-area: footernavbar;
+    display: flex; }
+    .footer .footernavbar ul {
+      display: flex;
+      list-style: none;
+      padding: 0%;
+      flex-direction: column; }
+      .footer .footernavbar ul li {
+        text-transform: uppercase;
+        list-style-type: none;
+        border-radius: 5%;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-decoration: none;
+        margin: 1rem; }
+        .footer .footernavbar ul li a {
+          list-style: none;
+          text-decoration: none;
+          color: white; }
+          .footer .footernavbar ul li a:hover {
+            color: red; }
+  .footer .redes {
+    grid-area: redes;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center; }
+    .footer .redes img {
+      width: 5rem;
+      transition: 0.5s;
+      object-fit: cover; }
+      .footer .redes img:hover {
+        transform: scale(1.5); }
