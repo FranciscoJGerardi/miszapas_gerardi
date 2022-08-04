@@ -1,0 +1,94 @@
+@media only screen and (max-width: 1024px){
+    .footer{
+        .redes{
+            padding: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+  }
+  @media only screen and (max-width: 992px){
+   .header{
+    justify-content: space-between;
+    flex-direction: row-reverse;
+   }
+  }
+  @media only screen and (max-width: 768px){
+    .footer{
+            .redes{
+                display: flex;
+                align-items: center;
+                padding: 2rem;
+                gap: 1rem;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+    }
+    .main__sobrenosotros{
+            .quienessomos{
+        display: flex;
+        flex-direction: column;
+        }
+        .historia{
+        display: flex;
+        flex-direction: column;
+        }
+  }
+}
+  
+  @media only screen and (max-width: 425px){
+    .main__productosenoferta {
+      display: grid; 
+      grid-auto-rows: 1fr; 
+      grid-template-columns: 1fr ; 
+      grid-template-rows: 1fr 1fr 1fr 1fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "zapa1" 
+        "zapa2"
+        "zapa3" 
+        "zapa4"; 
+        justify-items: center;
+    }
+    .main__sobrenosotros{
+                .quienessomos{
+                    display: flex;
+                    flex-direction: column;
+                    img{
+                        width: 15rem;
+                    }
+                }
+                .historia{
+                    display: flex;
+                    flex-direction: column;
+                    img{
+                        width: 15rem;
+                    }
+                }
+    }
+    .footer{
+        display: grid;
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1fr 1fr ; 
+        grid-template-rows: 1fr 1fr ; 
+        grid-template-areas: 
+        "derechos  footernavbar"
+        "redes redes";
+        .footernavbar{
+            ul{
+                li{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .redes{
+            display: flex;
+            flex-direction: row;
+            img{
+                width: 100%;
+            }
+        }
+    }   
+  }

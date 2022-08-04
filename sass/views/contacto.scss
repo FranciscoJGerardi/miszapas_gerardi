@@ -1,0 +1,4 @@
+.main_contacto{
+    @extend .main;
+    @include flexbox(row,space-around,center)
+}

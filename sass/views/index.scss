@@ -1,0 +1,6 @@
+.main__ofertas{
+    display: flex;
+    @include flexbox(row,center,none);
+    font-size: 5rem;
+    font-family: $font-family;
+}

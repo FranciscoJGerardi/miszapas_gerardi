@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+*::after,
+*::before,
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +9,6 @@
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
-/* -----------------------header---------------------- */
 .header {
   display: flex;
   justify-content: space-between; }
@@ -17,45 +19,53 @@ body {
   .header .buscador {
     height: 3rem; }
 
-/*-------------------main------------------*/
-.main {
+.main, .main__sobrenosotros, .main_contacto, .main_locales {
   background-image: url(../imagenes/fondomain.jpg);
   background-color: blue;
   padding: 2rem;
   display: flex;
   flex-direction: column; }
-  .main .main__ofertas {
-    display: flex;
-    justify-content: center;
-    font-size: 5rem; }
 
-/*----------------main productos---------------*/
-.main__productos {
-  background-image: url(../imagenes/fondomain.jpg);
-  background-color: blue;
-  padding: 2rem;
+.main__ofertas {
   display: flex;
-  flex-direction: column; }
-  .main__productos .catalogo {
-    display: flex;
-    flex-direction: column;
-    padding: 3rem; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  font-size: 5rem;
+  font-family: "Kanit", sans-serif; }
 
-/*----------------------------main contactanos----------------------------*/
+.main .catalogo, .main__sobrenosotros .catalogo, .main_contacto .catalogo, .main_locales .catalogo {
+  padding: 3rem; }
+  .main .catalogo select, .main__sobrenosotros .catalogo select, .main_contacto .catalogo select, .main_locales .catalogo select {
+    padding: 1rem;
+    margin: 3rem;
+    text-align: center; }
+
+.main__sobrenosotros section {
+  padding: 3rem; }
+
+.main__sobrenosotros img {
+  display: flex;
+  width: 25rem; }
+
+.main__sobrenosotros .quienessomos, .main__sobrenosotros .historia {
+  display: flex; }
+  .main__sobrenosotros .quienessomos p, .main__sobrenosotros .historia p {
+    padding: 1rem;
+    font-size: 2rem; }
+  .main__sobrenosotros .quienessomos h1, .main__sobrenosotros .historia h1 {
+    padding: 1rem;
+    font-size: 3rem; }
+
 .main_contacto {
-  background-image: url(../imagenes/fondomain.jpg);
-  background-color: blue;
-  padding: 2rem;
-  display: flex;
-  justify-content: space-around; }
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
 
-/*----------------------------main local----------------------------*/
 .main_locales {
-  background-image: url(../imagenes/fondomain.jpg);
-  background-color: blue;
-  display: flex;
-  padding: 1rem;
-  justify-content: space-around; }
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
   .main_locales .ubicacion {
     display: flex;
     flex-direction: column;
@@ -66,34 +76,6 @@ body {
     display: flex;
     justify-content: center; }
 
-/* --------------------------Main Sobre Nosotros-------------------------------- */
-.main__sobrenostros {
-  background-image: url(../imagenes/fondomain.jpg);
-  background-color: blue;
-  flex-direction: column; }
-  .main__sobrenostros section {
-    padding: 3rem; }
-  .main__sobrenostros img {
-    display: flex;
-    width: 25rem; }
-  .main__sobrenostros .quienessomos {
-    display: flex; }
-    .main__sobrenostros .quienessomos p {
-      padding: 1rem;
-      font-size: 2rem; }
-    .main__sobrenostros .quienessomos h1 {
-      padding: 1rem;
-      font-size: 3rem; }
-  .main__sobrenostros .historia {
-    display: flex; }
-    .main__sobrenostros .historia p {
-      padding: 1rem;
-      font-size: 2rem; }
-    .main__sobrenostros .historia h1 {
-      padding: 1rem;
-      font-size: 3rem; }
-
-/* ----------------footer---------------- */
 .footer {
   background-image: url(../imagenes/fondofooter.jpg);
   display: grid;
@@ -143,3 +125,68 @@ body {
       object-fit: cover; }
       .footer .redes img:hover {
         transform: scale(1.5); }
+
+@media only screen and (max-width: 1024px) {
+  .footer .redes {
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: flex-end; } }
+
+@media only screen and (max-width: 992px) {
+  .header {
+    justify-content: space-between;
+    flex-direction: row-reverse; } }
+
+@media only screen and (max-width: 768px) {
+  .footer .redes {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: flex-end; }
+  .main__sobrenosotros .quienessomos, .main__sobrenosotros .historia {
+    display: flex;
+    flex-direction: column; }
+  .main__sobrenosotros .historia {
+    display: flex;
+    flex-direction: column; } }
+
+@media only screen and (max-width: 425px) {
+  .main__productosenoferta {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "zapa1" 
+ "zapa2"
+ "zapa3" 
+ "zapa4";
+    justify-items: center; }
+  .main__sobrenosotros .quienessomos, .main__sobrenosotros .historia {
+    display: flex;
+    flex-direction: column; }
+    .main__sobrenosotros .quienessomos img, .main__sobrenosotros .historia img {
+      width: 15rem; }
+  .main__sobrenosotros .historia {
+    display: flex;
+    flex-direction: column; }
+    .main__sobrenosotros .historia img {
+      width: 15rem; }
+  .footer {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "derechos  footernavbar"
+ "redes redes"; }
+    .footer .footernavbar ul li {
+      font-size: 1rem; }
+    .footer .redes {
+      display: flex;
+      flex-direction: row; }
+      .footer .redes img {
+        width: 100%; } }

@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+        .divlogo{
+            display: flex;
+                .logo{
+                    height: 7rem;
+                }
+        }
+        .buscador{
+            height: 3rem;
+        }
+}

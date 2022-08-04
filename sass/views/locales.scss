@@ -1,0 +1,16 @@
+.main_locales{
+    @extend .main;
+    @include flexbox(row,space-around,center);
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+            .plaza{
+                image-resolution: 100%;
+            }
+    }
+    .mapa{
+        display: flex;
+        justify-content: center;
+    }
+}

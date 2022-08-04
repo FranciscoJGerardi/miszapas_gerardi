@@ -1,0 +1,59 @@
+.footer {
+    background-image: url(../imagenes/fondofooter.jpg);
+    display: grid; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.6fr 0.6fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: "derechos  footernavbar  redes"; 
+        .derechos {
+            grid-area: derechos;
+            color: white;
+            padding: 3rem;
+            font-size: 1.5rem;
+        }
+        .footernavbar { 
+            grid-area: footernavbar; 
+            display: flex;  
+                ul{
+                display: flex;
+                list-style: none;
+                padding: 0%;
+                flex-direction: column;
+                    li{
+                    text-transform: uppercase;
+                    list-style-type: none;
+                    border-radius: 5%;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                    margin: 1rem;
+                        a{
+                        list-style: none;
+                        text-decoration: none;
+                        color: white;
+                            &:hover{
+                                color: red;
+                            }
+                        }
+                    }
+                }                       
+        }
+        .redes {
+            grid-area: redes;
+            display: flex;
+            padding: 2rem;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-direction: row;
+            align-items: center;
+                img{
+                    width: 5rem;
+                    transition: 0.5s;
+                    object-fit: cover;
+                    &:hover{
+                        transform: scale(1.5);
+                    }
+                }
+        }
+}

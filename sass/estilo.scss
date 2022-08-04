@@ -1,186 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}   
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-/* -----------------------header---------------------- */
-
-.header{
-    display: flex;
-    justify-content: space-between;
-        .divlogo{
-            display: flex;
-                .logo{
-                    height: 7rem;
-                }
-        }
-        .buscador{
-            height: 3rem;
-        }
-}
-
-/*-------------------main------------------*/
-
-.main{
-    background-image: url(../imagenes/fondomain.jpg);
-    background-color: blue;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-        .main__ofertas{
-            display: flex;
-            justify-content: center;
-            font-size: 5rem;
-        }
-}
-
-/*----------------main productos---------------*/
-
-.main__productos{
-    background-image: url(../imagenes/fondomain.jpg);
-    background-color: blue;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-        .catalogo{
-            display: flex;
-            flex-direction: column;
-            padding: 3rem;
-        }
-}
-
-/*----------------------------main contactanos----------------------------*/
-
-.main_contacto{
-    background-image: url(../imagenes/fondomain.jpg);
-    background-color: blue;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-/*----------------------------main local----------------------------*/
-
-.main_locales{
-    background-image: url(../imagenes/fondomain.jpg);
-    background-color: blue;
-    display: flex;
-    padding: 1rem;
-    justify-content: space-around;
-        .ubicacion{
-            display: flex;
-            flex-direction: column;
-            padding: 2rem;
-                .plaza{
-                    image-resolution: 100%;
-                }
-        }
-        .mapa{
-            display: flex;
-            justify-content: center;
-        }
-}
-
-/* --------------------------Main Sobre Nosotros-------------------------------- */
-
-.main__sobrenostros{
-    background-image: url(../imagenes/fondomain.jpg);
-    background-color: blue;
-    flex-direction: column;
-        section{
-            padding: 3rem;
-        }
-        img{
-            display: flex;
-            width: 25rem;
-        }
-        .quienessomos{
-            display: flex;
-                p{
-                    padding: 1rem;
-                    font-size: 2rem; 
-                }
-                h1{
-                    padding: 1rem;
-                    font-size: 3rem;
-                }
-        }
-        .historia{
-            display: flex;
-                p{
-                    padding: 1rem;
-                    font-size: 2rem; 
-                }
-                h1{
-                    padding: 1rem;
-                    font-size: 3rem;
-                }
-        }
-}
-
-/* ----------------footer---------------- */
-
-.footer {
-    background-image: url(../imagenes/fondofooter.jpg);
-    display: grid; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 0.6fr 0.6fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: "derechos  footernavbar  redes"; 
-        .derechos {
-            grid-area: derechos;
-            color: white;
-            padding: 3rem;
-            font-size: 1.5rem;
-        }
-        .footernavbar { 
-            grid-area: footernavbar; 
-            display: flex;  
-                ul{
-                display: flex;
-                list-style: none;
-                padding: 0%;
-                flex-direction: column;
-                    li{
-                    text-transform: uppercase;
-                    list-style-type: none;
-                    border-radius: 5%;
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    text-decoration: none;
-                    margin: 1rem;
-                        a{
-                        list-style: none;
-                        text-decoration: none;
-                        color: white;
-                            &:hover{
-                                color: red;
-                            }
-                        }
-                    }
-                }                       
-        }
-        .redes {
-            grid-area: redes;
-            display: flex;
-            padding: 2rem;
-            justify-content: space-between;
-            gap: 1rem;
-            flex-direction: row;
-            align-items: center;
-                img{
-                    width: 5rem;
-                    transition: 0.5s;
-                    object-fit: cover;
-                    &:hover{
-                        transform: scale(1.5);
-                    }
-                }
-        }
-}
+// Variables
+@import "utilities/variables";
+// Reset
+@import "base/reset";
+// Normalize
+@import "base/normalize";
+// Operators
+@import "utilities/operator";
+// Header
+@import "components/header";
+// Mains
+@import "components/main";
+// Index
+@import "views/index";
+// Productos
+@import "views/productos";
+// Sobre Nosotros
+@import "views/sobre_nosotros";
+// Contactanos
+@import "views/contacto";
+// Como encontrarnos
+@import "views/locales";
+// Footer
+@import "components/footer";
+//MediaQueries
+@import "components/mediaqueries";
