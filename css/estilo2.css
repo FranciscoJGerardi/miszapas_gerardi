@@ -161,10 +161,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
-    grid-template-areas: "zapa1" 
- "zapa2"
- "zapa3" 
- "zapa4";
+    grid-template-areas: "zapa1"  "zapa2" "zapa3"  "zapa4";
     justify-items: center; }
   .main__sobrenosotros .quienessomos, .main__sobrenosotros .historia {
     display: flex;
@@ -181,8 +178,7 @@ body {
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "derechos  footernavbar"
- "redes redes"; }
+    grid-template-areas: "derechos  footernavbar" "redes redes"; }
     .footer .footernavbar ul li {
       font-size: 1rem; }
     .footer .redes {
